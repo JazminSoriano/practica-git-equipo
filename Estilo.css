@@ -1,0 +1,142 @@
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7fafc;
+    margin: 0;
+    padding: 30px;
+}
+
+header input:focus {
+    border-color: #48bb78; 
+    box-shadow: 0 0 8px rgba(72, 187, 120, 0.6); 
+    background-color: #2d3748; 
+}
+
+header {
+    background-color: #111111;
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
+    flex-wrap: wrap;           
+    gap: 20px;
+}
+
+header button:active {
+    transform: scale(0.95); 
+}
+
+header button {
+    background-color: #48bb78; 
+    color: white;
+    padding: 10px 15px;        
+    border-radius: 8px;
+}
+
+header input {
+    background-color: #4a5568; 
+    color: #ffffff;            
+    border: 1px solid #718096; 
+    padding: 10px 15px;
+    border-radius: 8px;        
+    outline: none;             
+    transition: all 0.3s ease;
+}
+
+#titulo-principal {
+    color: #f8f8f8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+    margin: 0 0 15px 0;
+}
+
+main {
+    display: flex;           
+    flex-direction: row;      
+    justify-content: center;  
+    align-items: stretch;     
+    margin-top: 30px;
+    flex-wrap: wrap;         
+}
+
+.tarjeta-info {
+    background-color: #ffffff;
+    flex: 1;                  
+    min-width: 280px;        
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+    border-top: 6px solid #4299e1; 
+}
+
+.tarjeta-info.borde-verde {
+    border-top-color: #48bb78; 
+}
+
+.tarjeta-info.borde-amarillo {
+    border-top-color: #f6e05e; 
+}
+
+
+.tarjeta-info:hover {
+    transform: translateY(-5px);
+}
+
+p {
+    color: #4a5568;
+    font-size: 1.1rem;
+}
+
+nav {
+    background: #1b1b1b;
+    padding: 15px 0; 
+    margin-bottom: 30px;
+    border-radius: 8px;
+    width: 100%;    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;            
+    margin: 0;
+    padding: 0;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+footer {
+    background-color: #111111; 
+    width: 100%;              
+    position: fixed;           
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;          
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
